@@ -28,10 +28,10 @@
                 <span class="logo-lab">Web</span>Studio</a>
               <ul class="items-header">
                <li class="menu-items">  
-                <a href="./index.html" class="link">Студія</a>
+                <a href="./index.html" class="link-studio">Студія</a>
                </li>
                 <li class="menu-items">
-                 <a href="./portfolio.html" class="link">Портфоліо</a> 
+                 <a href="./portfolio.html" class="link-portfolio">Портфоліо</a> 
                 </li>
                 <li class="menu-items">
                  <a href="#" class="link">Контакти</a>
@@ -72,7 +72,7 @@
        <section class="main">
         <div class="container">  
          <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-         <button type="button" class="button">Замовити послугу</button>
+         <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
         </section>
 
@@ -134,26 +134,32 @@
               <li class="work-list">
                 <div class="work-list-box">
                   <img src="./images/box1.jpg" alt="робота за ноутбуком">
-                  
-                  <p class="work-list-diskr">Десктопні додатки</p>
+                  <div class="thumb">
+                    <p class="work-list-diskr">Десктопні додатки</p>
 
+                  </div>
+                                   
                 </div>
                   
               </li>
              
              <li class="work-list">
                <div class="work-list-box">
-                 <img src="./images/box2.jpg" alt="робота за смартфоном" max-width=100%, height=auto>
+                 <img src="./images/box2.jpg" alt="робота за смартфоном">
+                  <div class="thumb">
               
-                 <p class="work-list-diskr">Мобільні додатки</p>
+                   <p class="work-list-diskr">Мобільні додатки</p>
+                  </div>
                 </div>
               
              </li>
              <li class="work-list">
                 <div class="work-list-box">
-                   <img src="./images/box3.jpg" alt="робота за планшетом" max-width=100%, height=auto>
+                   <img src="./images/box3.jpg" alt="робота за планшетом">
+                    <div class="thumb">
               
-                   <p class="work-list-diskr">Дизайнерські рішення</p>
+                      <p class="work-list-diskr">Дизайнерські рішення</p>
+                    </div>
                  </div>
 
               </li>
@@ -440,6 +446,19 @@
                            
     </footer>
     
+
+    <!--модальне вікно-->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon">
+            <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
