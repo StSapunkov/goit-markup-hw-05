@@ -113,7 +113,7 @@ body{
     text-decoration: none;
     padding: 32px 0;
 
-    transition: color var(--transition-anime);
+    transition: background-color var(--transition-anime);
 }
 
 .link-studio.current::after{
@@ -139,7 +139,7 @@ body{
     text-decoration: none;
     padding: 32px 0;
 
-    transition: color var(--transition-anime);
+    transition: background-color var(--transition-anime);
 }
 
 .link-portfolio.current::after {
@@ -173,6 +173,7 @@ body{
     width: 16px;
     height: 12px;
     color: var(--text-color);
+
     transition: fill var(--transition-anime);
 }
 
@@ -181,6 +182,7 @@ body{
     width: 10px;
     height: 16px;
     color: var(--text-color);
+    
     transition: fill var(--transition-anime);
 }
 
