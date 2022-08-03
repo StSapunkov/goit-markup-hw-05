@@ -182,7 +182,7 @@ body{
     width: 10px;
     height: 16px;
     color: var(--text-color);
-    
+
     transition: fill var(--transition-anime);
 }
 
@@ -585,6 +585,7 @@ body{
 
 .companies{
     color: #AFB1B8;
+    
     margin-top: 16px;
 }
 
